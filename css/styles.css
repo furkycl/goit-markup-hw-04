@@ -1,0 +1,289 @@
+/* Global Styles */
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #434455;
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  display: block;
+  padding: 0px 156px;
+  width: 1440px;
+}
+
+/* Header Section Styles */
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-size: 18px;
+  color: #2e2f42;
+  line-height: 1.16667;
+  letter-spacing: 3%;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: #4d5ae5;
+}
+
+.menu {
+  margin-left: -400px;
+}
+
+.address {
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.navbar-list-item-a {
+  color: #2e2f42;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.navbar-list-item-a:hover {
+  color: #404bbf;
+}
+
+.navbar-list-item:first-child a:active {
+  text-decoration: underline;
+}
+
+.navbar-user-info {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar-user-email:hover,
+.navbar-user-tel:hover {
+  cursor: pointer;
+  color: #404bbf;
+}
+
+/* Header Section Styles End */
+
+/* Main Section Styles */
+
+/* Effective Solutions Part Styles */
+
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07143;
+  letter-spacing: 0.02em;
+  color: #fff;
+}
+
+.section-slogan {
+  background-color: #2e2f42;
+}
+
+.container-slogan {
+  text-align: center;
+  align-content: center;
+  height: 600px;
+}
+
+.slogan-button {
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border-radius: 4px;
+  background-color: #4d5ae5;
+  border-color: #4d5ae5;
+  width: 169px;
+  height: 56px;
+}
+
+.slogan-button:hover {
+  cursor: pointer;
+  background-color: #404bbf;
+}
+
+/* Effective Solutions Part Styles End */
+
+/* Features Part Styles */
+
+.features-list {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+}
+
+.features-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.features-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* Features Part Styles End */
+
+/* Our Team Part Styles */
+
+.section-team {
+  background-color: #f4f4fd;
+}
+
+.container-team {
+  height: 732px;
+  align-content: center;
+}
+
+.team-header {
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+}
+
+.ourteam-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 24px;
+}
+
+.our-team-list-items {
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+  background-color: #fff;
+}
+
+.team-member-pic {
+  width: 264px;
+  height: 264px;
+}
+
+.team-member-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.team-member-position {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+
+/* Our Team Part Styles End */
+
+/* Our Portfolio Styles */
+
+.portfolio-header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
+
+.portfolio-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.portfolio-card-content {
+  border-right: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-bottom: 1px solid #e7e9fc;
+  margin-top: -4px;
+}
+
+.portfolio-images {
+  width: 360px;
+  height: 360px;
+}
+
+.portfolio-card-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  padding-left: 16px;
+  color: #2e2f42;
+  margin-top: 0;
+  padding-top: 32px;
+}
+
+.portfolio-card-text {
+  padding-left: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Our Portfolio Styles End */
+
+/* Main Section Styles End */
+
+/* Footer Section Styles */
+
+.section-footer {
+  background-color: #2e2f42;
+}
+
+.container-footer {
+  align-content: center;
+  height: 312px;
+}
+
+.footer-logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  line-height: 21px;
+  letter-spacing: 3%;
+  color: #f4f4fd;
+}
+.footer-logo-web {
+  color: #4d5ae5;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+
+/* Footer Section Styles End */
