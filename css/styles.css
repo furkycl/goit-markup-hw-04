@@ -61,6 +61,8 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar-list-item-a:hover {
@@ -76,6 +78,12 @@ body {
   letter-spacing: 0.02em;
   display: flex;
   gap: 40px;
+}
+
+.navbar-user-email,
+.navbar-user-tel {
+  transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navbar-user-email:hover,
@@ -98,13 +106,9 @@ h1 {
   color: #fff;
 }
 
-.section-slogan {
-  background-color: #2e2f42;
-}
-
 .container-slogan {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
-    url(../images/hero-image.jpg);
+  background-color: #2e2f42;
+  background: url(../images/hero-image.jpg);
   text-align: center;
   align-content: center;
   height: 600px;
@@ -120,6 +124,11 @@ h1 {
   border-color: #4d5ae5;
   width: 169px;
   height: 56px;
+}
+
+.slogan-button {
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .slogan-button:hover {
@@ -234,8 +243,11 @@ h1 {
 }
 
 .section-team-socialmedia-icons {
+  fill: #4d5ae5;
   height: 40px;
   width: 40px;
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-team-socialmedia-icons:hover {
   fill: #31d0aa;
@@ -264,6 +276,11 @@ h1 {
   gap: 24px;
   justify-content: center;
   margin-bottom: 120px;
+}
+
+.portfolio-list-items {
+  transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-items:hover {
@@ -359,8 +376,19 @@ h1 {
 }
 
 .footer-social-media-icons {
+  fill: #4d5ae5;
   height: 40px;
   width: 40px;
+}
+
+.footer-social-media-icons {
+  transition: fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-media-icons:hover {
+  cursor: pointer;
+  fill: #31d0aa;
 }
 
 .footer-social-media-icons-div {
