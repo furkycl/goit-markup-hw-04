@@ -103,6 +103,8 @@ h1 {
 }
 
 .container-slogan {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)),
+    url(../images/hero-image.jpg);
   text-align: center;
   align-content: center;
   height: 600px;
@@ -146,6 +148,27 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.feature-cards {
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.bg-svg {
+  background-color: #f4f4fd;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  text-align: center;
+  align-content: center;
+}
+
+.feature-icons {
+  height: 64px;
+  width: 64px;
+  justify-items: center;
 }
 
 /* Features Part Styles End */
@@ -201,11 +224,29 @@ h1 {
   color: #434455;
 }
 
+.section-team-socialmedia-div {
+  justify-content: space-between;
+  display: flex;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+
+.section-team-socialmedia-icons {
+  height: 40px;
+  width: 40px;
+}
+.section-team-socialmedia-icons:hover {
+  fill: #31d0aa;
+  cursor: pointer;
+}
+
 /* Our Team Part Styles End */
 
 /* Our Portfolio Styles */
 
 .portfolio-header {
+  margin-top: 120px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -221,6 +262,12 @@ h1 {
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+  margin-bottom: 120px;
+}
+
+.portfolio-list-items:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  cursor: pointer;
 }
 
 .portfolio-card-content {
@@ -232,7 +279,12 @@ h1 {
 
 .portfolio-images {
   width: 360px;
-  height: 360px;
+  height: 300px;
+}
+
+.portfolio-images:hover {
+  background: url(../images/ourportfoliohoverbackground.jpg);
+  z-index: 3;
 }
 
 .portfolio-card-header {
@@ -263,8 +315,14 @@ h1 {
 }
 
 .container-footer {
-  align-content: center;
   height: 312px;
+}
+
+.footer-wrapper {
+  height: 312px;
+  display: flex;
+  align-items: center;
+  gap: 120px;
 }
 
 .footer-logo {
@@ -284,6 +342,28 @@ h1 {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+}
+
+.footer-social-media-div {
+  margin-top: -70px;
+}
+
+.footer-social-media-icons-div {
+  gap: 16px;
+}
+
+.footer-social-media-text {
+  font-weight: 500;
+  color: #fff;
+}
+
+.footer-social-media-icons {
+  height: 40px;
+  width: 40px;
+}
+
+.footer-social-media-icons-div {
+  display: flex;
 }
 
 /* Footer Section Styles End */
