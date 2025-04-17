@@ -112,14 +112,18 @@ body {
 /* Effective Solutions Part Styles */
 
 h1 {
+  text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07143;
   letter-spacing: 0.02em;
   color: #fff;
+  position: relative;
+  z-index: 2;
 }
 
 .container-slogan {
+  position: relative;
   background-color: #2e2f42;
   background: url(../images/hero-image.jpg);
   text-align: center;
@@ -127,7 +131,21 @@ h1 {
   height: 600px;
 }
 
+.container-slogan-opacity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+  height: 600px;
+  width: 1440px;
+  text-align: center;
+  align-content: center;
+  z-index: 1;
+}
+
 .slogan-button {
+  position: relative;
   color: #fff;
   font-weight: 500;
   line-height: 1.5;
@@ -137,6 +155,7 @@ h1 {
   border-color: #4d5ae5;
   width: 169px;
   height: 56px;
+  z-index: 2;
 }
 
 .slogan-button {
@@ -263,7 +282,7 @@ h1 {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-team-socialmedia-icons:hover {
-  fill: #31d0aa;
+  fill: #404bbf;
   cursor: pointer;
 }
 
