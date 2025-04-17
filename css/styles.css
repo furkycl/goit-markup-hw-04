@@ -56,6 +56,7 @@ body {
 }
 
 .navbar-list-item-a {
+  position: relative;
   color: #2e2f42;
   font-weight: 500;
   line-height: 1.5;
@@ -63,6 +64,18 @@ body {
   text-decoration: none;
   transition: color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar-list-item-a-active::after {
+  content: "";
+  text-decoration: underline;
+  width: max-content; /* Bu nedense çalışmıyor */
+  width: 50px;
+  height: 5px;
+  margin-top: 35px;
+  margin-left: -50px;
+  position: absolute;
+  background-color: #404bbf;
 }
 
 .navbar-list-item-a:hover {
@@ -298,11 +311,7 @@ h1 {
 .portfolio-images {
   width: 360px;
   height: 300px;
-}
-
-.portfolio-images:hover {
   background: url(../images/ourportfoliohoverbackground.jpg);
-  z-index: 3;
 }
 
 .portfolio-card-header {
