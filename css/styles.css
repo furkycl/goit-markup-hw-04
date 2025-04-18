@@ -311,6 +311,8 @@ h1 {
 }
 
 .portfolio-list-items {
+  position: relative;
+  overflow: hidden;
   transition: box-shadow 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -332,29 +334,26 @@ h1 {
   height: 300px;
 }
 
-.relative {
-  position: relative;
-}
-
 .portfolio-card-background {
-  position: absolute;
-  width: 360px;
-  height: 300px;
-  background-image: url(../images/ourportfoliohoverbackground.jpg);
-  opacity: 0;
-  transition: opacity 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  color: #fff;
   text-align: center;
-  align-content: center;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  color: #f4f4fd;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: #4d5ae5;
+  display: none;
+  transform: translatey(100%);
+  transition: transform 250ms;
 }
 
-.portfolio-card-background:hover {
-  opacity: 1;
-}
-
-.portfolio-card-background:hover {
-  z-index: 1;
+.portfolio-list-items:hover .portfolio-card-background {
+  display: block;
+  transform: translatey(0);
 }
 
 .portfolio-card-header {
